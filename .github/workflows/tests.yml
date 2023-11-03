@@ -16,4 +16,5 @@ jobs:
         python-version: 3.11  # Spécifiez la version de Python dont vous avez besoin
 
     - name: Exécuter les tests
-      run: python -m unittest Human_test.py
+      run: python -m unittest discover -s MyUnitTest -p Human_test.py
+      # 'test_*.py'
