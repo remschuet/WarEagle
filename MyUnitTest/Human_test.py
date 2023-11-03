@@ -8,18 +8,23 @@ class TestMonModule(unittest.TestCase):
         self.h = Human("remi", 12, 24) 
     
     def test_1(self):
+        self.h = Human("remi", 12, 24) 
         self.assertEqual(self.h.pv + 2, 14)
 
     def test_2(self):
+        self.h = Human("remi", 12, 24) 
         self.assertEqual(self.h.nom, "remi")
 
     def test_3(self):
+            self.h = Human("remi", 12, 24) 
             self.assertEqual(self.h.pv, 14)
 
     def test_4(self):
+            self.h = Human("remi", 12, 24) 
             self.assertEqual(self.h.age, 12)
 
     def test_5(self):
+        self.h = Human("remi", 12, 24) 
         self.h.mourrir()
         self.assertEqual(self.h.pv, 0)
 
