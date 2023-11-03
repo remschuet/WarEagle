@@ -1,9 +1,12 @@
 class Human:
     def __init__(self, nom: str, age: int, pv=15) -> None:
-        self.nom = "erreur"
+        self.nom = nom
         self.age = age
         self.pv = pv
 
+
+    def mourrir(self):
+        self.age = 0
 
 if __name__ == '__main__':
     h = Human("rems", 12)
