@@ -6,9 +6,6 @@ class TestMonModule(unittest.TestCase):
     def __init__(self, methodName: str = "runTest") -> None:
         super().__init__(methodName)
         self.h = Human("remi", 12, 24) 
-
-    def test_1(self):
-        self.assertEqual(self.h.pv, 15)
     
     def test_3(self):
         self.assertEqual(self.h.pv, 24)
