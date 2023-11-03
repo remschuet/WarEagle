@@ -16,4 +16,4 @@ class TestMonModule(unittest.TestCase):
     def test_2(self):
         self.assertEqual(self.h.nom, "remi")
 
-# python -m unittest test
+# python -m unittest Human_test.py
