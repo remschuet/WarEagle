@@ -1,18 +1,7 @@
-name: Check Python Print Statements
-
-on: [push]
-
-jobs:
-  check-prints:
-    runs-on: ubuntu-latest
-
-    steps:
-    - name: Check for Python print statements
-      run: |
-        # Search for 'print' statements in Python files
-        if git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep -E '\.py$' | xargs grep -nH 'print'; then
-        echo "Error: Python code contains print statements. Please remove them before pushing."
-        exit 1
-        fi
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+repos:
+  - repo: https://github.com/pre-commit/mirrors-grep
+    rev: v2.4.1
+    hooks:
+    - id: grep
+      args: ['--ignore-case', '-E', 'print']
+      stages: [commit]
