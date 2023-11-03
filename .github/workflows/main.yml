@@ -15,8 +15,5 @@ jobs:
       with:
         python-version: 3.11  # Spécifiez la version de Python dont vous avez besoin
 
-    - name: Installer les dépendances
-      run: pip install -r code/requirements.txt  # Si vous avez un fichier de dépendances
-
     - name: Exécuter les tests
       run: python -m unittest discover -s code -p 'test_*.py'
