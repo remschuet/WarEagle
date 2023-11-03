@@ -13,7 +13,7 @@ jobs:
     - name: Set up Python
       uses: actions/setup-python@v2
       with:
-        python-version: 3.x  # Spécifiez la version de Python dont vous avez besoin
+        python-version: 3.11  # Spécifiez la version de Python dont vous avez besoin
 
     - name: Installer les dépendances
       run: pip install -r code/requirements.txt  # Si vous avez un fichier de dépendances
