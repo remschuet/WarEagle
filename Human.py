@@ -6,7 +6,7 @@ class Human:
 
 
     def mourrir(self):
-        self.age = 0
+        self.pv = 0
 
 if __name__ == '__main__':
     h = Human("rems", 12)
