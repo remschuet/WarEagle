@@ -1,7 +1,7 @@
 class Human:
     def __init__(self, nom: str, age: int, pv=15) -> None:
-        self.nom = nom
-        self.age = 0
+        self.nom = "erreur"
+        self.age = age
         self.pv = pv
 
 
