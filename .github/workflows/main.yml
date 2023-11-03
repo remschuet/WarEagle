@@ -1,7 +1,0 @@
-repos:
-  - repo: https://github.com/pre-commit/mirrors-grep
-    rev: v2.4.1
-    hooks:
-    - id: grep
-      args: ['--ignore-case', '-E', 'print']
-      stages: [commit]
