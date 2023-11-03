@@ -1,0 +1,22 @@
+name: Tests
+
+on: [push]  # Exécuter les tests à chaque push
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout le code
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.x  # Spécifiez la version de Python dont vous avez besoin
+
+    - name: Installer les dépendances
+      run: pip install -r code/requirements.txt  # Si vous avez un fichier de dépendances
+
+    - name: Exécuter les tests
+      run: python -m unittest discover -s code -p 'test_*.py'
