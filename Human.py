@@ -10,4 +10,5 @@ class Human:
 
 if __name__ == '__main__':
     h = Human("rems", 12)
-    print(h.name)    print()
+    print(h.name)    
+    print()
